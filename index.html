@@ -52,8 +52,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 10px ;
-            
+            margin-top: 10px;
         }
         .service-overview a {
             text-decoration: none;
@@ -61,7 +60,6 @@
             flex: 1 1 calc(33% - 40px);
             margin: 10px;
             box-sizing: border-box;
-            
         }
         .service-overview .service-box {
             background: white;
@@ -84,6 +82,23 @@
         }
         .service-overview .service-box p {
             color: #555;
+        }
+        .book-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .book-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
         .services {
             padding: 20px;
@@ -141,7 +156,7 @@
                 <img src="photography.jpg" alt="Photography">
                 <h3>Photography</h3>
                 <p>We capture your moments beautifully with our professional photography services.</p>
-               
+                <button class="book-button" onclick="alert('Book Photography!')">Book Now</button>
             </div>
         </a>
         <a href="#repair">
@@ -149,7 +164,7 @@
                 <img src="computer_repair.jpg" alt="Computer Repair">
                 <h3>Computer Repair</h3>
                 <p>Reliable computer repair services from expert technicians.</p>
-                
+                <button class="book-button" onclick="alert('Book Computer Repair!')">Book Now</button>
             </div>
         </a>
         <a href="#event">
@@ -157,7 +172,7 @@
                 <img src="event_services.jpg" alt="Event Services">
                 <h3>Event Services</h3>
                 <p>Comprehensive event services for seamless and memorable events.</p>
-                
+                <button class="book-button" onclick="alert('Book Event Services!')">Book Now</button>
             </div>
         </a>
     </div>

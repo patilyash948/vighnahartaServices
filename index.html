@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhnarharta Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            background-image: url('hero.jpg');
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .service-overview {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .service-overview .service-box {
+            background: white;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .service-overview .service-box h3 {
+            margin-bottom: 10px;
+        }
+        .service-overview .service-box p {
+            color: #555;
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+        .services h2 {
+            margin: 20px 0;
+        }
+        .service-card {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#photography">Photography</a>
+        <a href="#repair">Computer Repair</a>
+        <a href="#event">Event Services</a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Vidhnarharta Services</h1>
+            <p>Your one-stop solution for Photography, Computer Repair, and Event Services</p>
+        </div>
+    </div>
+
+    <div class="service-overview">
+        <div class="service-box">
+            <h3>Photography</h3>
+            <p>We capture your moments beautifully with our professional photography services.</p>
+        </div>
+        <div class="service-box">
+            <h3>Computer Repair</h3>
+            <p>Reliable computer repair services from expert technicians.</p>
+        </div>
+        <div class="service-box">
+            <h3>Event Services</h3>
+            <p>Comprehensive event services for seamless and memorable events.</p>
+        </div>
+    </div>
+
+    <div class="services" id="photography">
+        <h2>Photography</h2>
+        <div class="service-card">
+            <h3>Professional Photography</h3>
+            <p>We capture your moments beautifully with our professional photography services. Whether it's a wedding, a birthday, or any special event, we make sure your memories are preserved perfectly.</p>
+        </div>
+    </div>
+
+    <div class="services" id="repair">
+        <h2>Computer Repair</h2>
+        <div class="service-card">
+            <h3>Expert Computer Repair</h3>
+            <p>Our expert technicians provide reliable computer repair services. From hardware repairs to software troubleshooting, we ensure your devices are up and running smoothly.</p>
+        </div>
+    </div>
+
+    <div class="services" id="event">
+        <h2>Event Services</h2>
+        <div class="service-card">
+            <h3>Comprehensive Event Services</h3>
+            <p>We offer comprehensive event services, including planning, coordination, and execution. Let us handle the details so you can enjoy your event without any worries.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Designed and maintained by <a href="https://syoudtechnologies.com" target="_blank" style="color: #f2f2f2;">Syoud Technologies</a></p>
+    </div>
+</body>
+</html>

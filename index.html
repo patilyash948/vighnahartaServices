@@ -48,20 +48,35 @@
         }
         .service-overview {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin: 20px 0;
         }
+        .service-overview a {
+            text-decoration: none;
+            color: inherit;
+            flex: 1 1 calc(33% - 40px);
+            margin: 10px;
+            box-sizing: border-box;
+        }
         .service-overview .service-box {
             background: white;
-            margin: 10px;
             padding: 20px;
-            width: 30%;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 10px;
             text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-overview .service-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service-overview .service-box:hover {
+            transform: scale(1.05);
         }
         .service-overview .service-box h3 {
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
         .service-overview .service-box p {
             color: #555;
@@ -89,6 +104,16 @@
             width: 100%;
             bottom: 0;
         }
+        @media (max-width: 768px) {
+            .service-overview a {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service-overview a {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -107,18 +132,27 @@
     </div>
 
     <div class="service-overview">
-        <div class="service-box">
-            <h3>Photography</h3>
-            <p>We capture your moments beautifully with our professional photography services.</p>
-        </div>
-        <div class="service-box">
-            <h3>Computer Repair</h3>
-            <p>Reliable computer repair services from expert technicians.</p>
-        </div>
-        <div class="service-box">
-            <h3>Event Services</h3>
-            <p>Comprehensive event services for seamless and memorable events.</p>
-        </div>
+        <a href="#photography">
+            <div class="service-box">
+                <img src="photography.jpg" alt="Photography">
+                <h3>Photography</h3>
+                <p>We capture your moments beautifully with our professional photography services.</p>
+            </div>
+        </a>
+        <a href="#repair">
+            <div class="service-box">
+                <img src="computer_repair.jpg" alt="Computer Repair">
+                <h3>Computer Repair</h3>
+                <p>Reliable computer repair services from expert technicians.</p>
+            </div>
+        </a>
+        <a href="#event">
+            <div class="service-box">
+                <img src="event_services.jpg" alt="Event Services">
+                <h3>Event Services</h3>
+                <p>Comprehensive event services for seamless and memorable events.</p>
+            </div>
+        </a>
     </div>
 
     <div class="services" id="photography">
